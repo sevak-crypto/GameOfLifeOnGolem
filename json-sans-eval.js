@@ -14,7 +14,6 @@
 
 /**
  * Parses a string of well-formed JSON text.
- * Mike Samuel <mikesamuel@gmail.com>
  */
 
 var jsonParse=(function(){var number='(?:-?\\b(?:0|[1-9][0-9]*)(?:\\.[0-9]+)?(?:[eE][+-]?[0-9]+)?\\b)';var oneChar='(?:[^\\0-\\x08\\x0a-\\x1f\"\\\\]'+'|\\\\(?:[\"/\\\\bfnrt]|u[0-9A-Fa-f]{4}))';var string='(?:\"'+oneChar+'*\")';var jsonToken=new RegExp('(?:false|true|null|[\\{\\}\\[\\]]'+'|'+number
